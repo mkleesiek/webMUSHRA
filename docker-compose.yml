@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./results:/var/www/html/results
-      - ./configs:/var/www/html/configs
+      - ./results:/var/www/html/results:Z
+      - ./configs:/var/www/html/configs:Z
     ports:
       - "8000:80"
